@@ -4,8 +4,8 @@ class Team:
         self.players = players
         self.coach = coach
     
-    def add_player(self, name):
-        self.players.append(name)
+    def add_player(self, new_player):
+        self.players.append(new_player)
     
     def has_player(self, name):
         for player in self.players:
@@ -16,4 +16,6 @@ class Team:
 
     # same as above but in short line:
     # return name in self.players
+    # OR
+    # return self.players.count(player) > 0
 
